@@ -80,8 +80,11 @@ texture_filter = 1
 scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_5w7ye")
 animation = &"idle"
+autoplay = "idle"
 offset = Vector2(0, -5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, 2)
 shape = SubResource("RectangleShape2D_e2cv7")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
