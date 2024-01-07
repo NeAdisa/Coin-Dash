@@ -10,9 +10,18 @@ func pickup():
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
-
+	$Timer.start(randf_range(0, 4))
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+func _on_timer_timeout():
+	$AnimatedSprite2D.frame = 0
+	$AnimatedSprite2D.play()
+
+
+func _on_area_entered(area):
+	if area.is_in_group("obstacles"):
+		position = Vector2(randi_range(0, screenSize.x), randi_range(0, screenSize.y))
+		

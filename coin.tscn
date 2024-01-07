@@ -49,7 +49,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("11_0qqw6")
 }],
-"loop": true,
+"loop": false,
 "name": &"default",
 "speed": 12.0
 }]
@@ -71,3 +71,7 @@ frame_progress = 0.948192
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_7elet")
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
