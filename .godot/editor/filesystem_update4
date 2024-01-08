@@ -1,9 +1,5 @@
-res://coin.gd
-res://coin.tscn
-res://powerup.gd
+res://player.tscn
+res://Player.gd
 res://powerup.tscn
+res://coin.tscn
 res://cactus.tscn
-res://main.tscn
-res://Main.gd
-res://cactus.gd
-res://player.gd
