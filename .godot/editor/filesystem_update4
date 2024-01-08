@@ -1,2 +1,9 @@
-res://player.tscn
+res://coin.gd
+res://coin.tscn
+res://powerup.gd
+res://powerup.tscn
+res://cactus.tscn
+res://main.tscn
+res://Main.gd
+res://cactus.gd
 res://player.gd
